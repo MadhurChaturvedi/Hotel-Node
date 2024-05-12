@@ -4,6 +4,8 @@ const app = express();
 const bodyParser = require('body-parser')
 const personRouter = require('./routers/personRoutes.js')
 const routerMenu = require('./routers/menuRoutes.js')
+require('dotenv').config()
+
 
 
 app.use(bodyParser.json());
@@ -11,9 +13,10 @@ app.use('/person', personRouter)
 app.use('/menu', routerMenu)
 
 
+const port = process.env.PORT || 5000
 
-app.listen(5000, () => {
-  console.log(`server is running on port:5000🎃🍔`);
+app.listen(port, () => {
+  console.log(`server is running on port:${port}🎃🍔`);
 });
 
 
