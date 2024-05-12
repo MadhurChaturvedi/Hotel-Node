@@ -1,7 +1,6 @@
 const express = require('express')
 const routerMenu = express.Router()
 const MenuItem = require('../model/menu.js');
-const { route } = require('./personRoutes.js');
 
 
 // Create Menu

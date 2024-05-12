@@ -1,9 +1,7 @@
 const express = require('express');
 const db = require('./db/DB.js');
 const app = express();
-const Person = require('./model/person.js');
 const bodyParser = require('body-parser')
-const MenuItem = require('./model/menu.js')
 const personRouter = require('./routers/personRoutes.js')
 const routerMenu = require('./routers/menuRoutes.js')
 
@@ -15,11 +13,10 @@ app.use('/menu', routerMenu)
 
 
 app.listen(5000, () => {
-    console.log(`server is running on port:5000🎃🍔`);
+  console.log(`server is running on port:5000🎃🍔`);
 });
 
 
-// 13:00
 
 
 
