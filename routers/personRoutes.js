@@ -3,6 +3,7 @@ const personRouter = express.Router()
 const Person = require('../model/person.js');
 
 
+
 personRouter.post('/', async (req, res) => {
     try {
         const data = req.body;
